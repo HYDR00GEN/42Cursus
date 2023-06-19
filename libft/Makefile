@@ -74,7 +74,8 @@ all:	$(NAME)
 $(NAME):	$(OBJS)
 					ar rcs $(NAME) $(OBJS)
 
-clean:	$(RM) $(OBJS) $(B_OBJS)
+clean:	
+	$(RM) $(OBJS) $(B_OBJS)
 
 fclean: 	clean
 					$(RM) $(NAME)
