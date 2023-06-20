@@ -18,7 +18,6 @@ SRCS	= 	ft_isalnum.c \
 			ft_toupper.c  \
 			ft_tolower.c  \
 			ft_atoi.c     \
-			ft_memset.c   \
 			ft_strrchr.c  \
 			ft_strlcat.c  \
 			ft_strncmp.c  \
@@ -28,7 +27,6 @@ SRCS	= 	ft_isalnum.c \
 			ft_isascii.c  \
 			ft_strchr.c   \
 			ft_memcpy.c   \
-			ft_strdup.c   \
 			ft_strdup.c   \
 			ft_strlcpy.c  \
 			ft_calloc.c   \
@@ -45,6 +43,7 @@ SRCS	= 	ft_isalnum.c \
 			ft_itoa.c		\
 			ft_strmapi.c	\
 			ft_striteri.c	\
+			ft_memset.c   \
 
 
 BONUS	= 	ft_lstnew.c			\
