@@ -1,12 +1,6 @@
-[] libft :
-# Program name libft.a
-# Turn in files Makefile, libft.h, ft_*.c
-# Makefile NAME, all, clean, fclean, re
-# External functs. Detailed below
-# Libft authorized n/a
-# Description Write your own library: a collection of functions
-# that will be a useful tool for your cursus.
-
-
-#TODO:
+# Status of progress
+| Project Pushed| Score |
+| ------ | ------ |
+| Libft | [![opaunas's 42 Libft Score](https://badge42.vercel.app/api/v2/clliat01g004508mfdf2rqn90/project/3128261)](https://github.com/JaeSeoKim/badge42)|
+| Printf | ... in progress |
 
