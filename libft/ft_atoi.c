@@ -12,30 +12,42 @@
 
 #include "libft.h"
 
+void	ft_atoicalc(int *som, int x, int i, const char *str)
+{
+	int	seg;
+
+	seg = 1;
+	while ((str[i] >= 9 && str[i] <= 13) || str[i] == 32)
+		i++;
+	if (str[i] == '-' || str[i] == '+')
+	{
+		seg = ',' - str[i];
+		i++;
+	}
+	while (str[i])
+	{
+		if (str[i] >= 48 && str[i] <= 57)
+		{
+			x = str[i] - 48;
+			*som = *som * 10;
+			*som = *som + x;
+		}
+		else
+			break ;
+		i++;
+	}
+	*som = *som * seg;
+}
+
 int	ft_atoi(const char *str)
 {
-	int	i;
-	int	operators;
-	int	nb;
+	int		som;
+	int		x;
+	int		i;
 
+	som = 0;
+	x = 0;
 	i = 0;
-	nb = 0;
-	operators = 0;
-	while (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13))
-		i++;
-	while (str[i] == '+' || str[i] == '-')
-	{
-		if (str[i] == '-')
-		operators++;
-	i++;
-	}
-	while (str[i] >= '0' && str[i] <= '9')
-	{
-		nb = nb * 10;
-		nb = nb + (str[i] - 48);
-		i++;
-	}
-	if (operators % 2 == 1)
-		nb = -nb;
-	return (nb);
+	ft_atoicalc(&som, x, i, str);
+	return (som);
 }
