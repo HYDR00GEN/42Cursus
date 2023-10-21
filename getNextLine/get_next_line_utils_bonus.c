@@ -118,7 +118,6 @@ char	*ft_next_line(char *str)
 	return (new);
 }
 
-
 char	*ft_strchr(char *str, int c)
 {
 	size_t	i;

@@ -6,23 +6,26 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/08 21:01:14 by marvin            #+#    #+#             */
-/*   Updated: 2023/10/15 08:36:50 by marvin           ###   ########.fr       */
+/*   Updated: 2023/10/21 18:10:30 by opaunas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-size_t ft_len(char *str) {
-    if (str == NULL) {
-        return 0;
-    }
+size_t	ft_len(char *str)
+{
+	size_t	i;
 
-    size_t i = 0;
-    while (str[i] != '\0') {
-        i++;
-    }
-
-    return i;
+	if (str == NULL)
+	{
+		return (0);
+	}
+	i = 0;
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
 }
 
 char	*get_next_line(int fd)
@@ -40,11 +43,12 @@ char	*get_next_line(int fd)
 	return (out);
 }
 
+/*
 int	main(void)
 {
-	char		*s;
-	int		i;
-	int		fd;
+	char	*s;
+	int	i;
+	int	fd;
 
 	fd = open("file.txt", O_RDONLY);
 	i = 1;
@@ -58,3 +62,4 @@ int	main(void)
 	close(fd);
 	return (0);
 }
+*/

@@ -32,4 +32,4 @@ char	*ft_strjoin(char *str1, char *str2);
 char	*ft_line_allocation(int fd, char *str);
 char	*get_next_line(int fd);
 
-# endif
+#endif
